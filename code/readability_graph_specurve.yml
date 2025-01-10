@@ -3,11 +3,10 @@
 Choices:
   Dependent Variable: # reserved keyword
 #     - ln(Dale chall): log_dale_chall
-- log(F-K grade): log_flesch_kincaid_grade_level
+#     - log(F-K grade): log_flesch_kincaid_grade_level
 #     - ln(Coleman-Liau index): log_coleman_liau_index
 #     - ln(Automated readability index): log_automated_readability_index
-#     - Excess Sentences: excess_sentences
-
+- Excess Sentences: excess_sentences
   Focal Variable: # reserved keyword
 #     - Only female: only_female
 - Proportion of women: prop_women
@@ -35,5 +34,5 @@ Choices:
     - By Network: cluster
 Conditions:
   Subsample:
-    - All sample: num_words_90_flag==1  | num_words_90_flag==0
-               # - Abstracts with > 90 words: num_words_90_flag==1 
+    - All sample: num_words_90_flag==1  | num_words_90_flag==0  
+               # - Abstracts with > 90 words: num_words_90_flag==1 ,
